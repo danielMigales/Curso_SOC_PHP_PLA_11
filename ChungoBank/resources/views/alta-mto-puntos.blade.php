@@ -37,7 +37,7 @@
     <input type="button" id="bajapuntos" value='Baja'>
     <input type="button" id="movimientos" value='Consulta mvtos'
         onclick="window.location.href = 'consulta-movimientos.html'">
-    <input type="button" id="salir" value='Abandonar' onclick="window.location.href = 'gestion.html'">
+    <input type="button" id="salir" value='Abandonar' onclick="window.location.href =  &#39{{url('/')}}&#39">
     <span id='mensajes'>Zona de mensajes</span>
 </form>
 @endsection

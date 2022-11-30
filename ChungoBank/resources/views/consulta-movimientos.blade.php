@@ -61,7 +61,7 @@
     <input type="button" id="detalle" value='Detalle' onclick="window.location.href = 'detalle-movimiento.html'">
     <input type="button" id="imprimir" value='Imprimir'>
     <input type="button" id="salir" value='Abandonar' onclick="window.location.href = 'alta-mto-puntos.html'">
-    <input type="button" id="altamov" value='Alta movimiento' onclick="window.location.href = 'alta-movimientos.html'">
+    <input type="button" id="altamov" value='Alta movimiento' onclick="window.location.href =  &#39{{url('/altaMovimientos')}}&#39">
     <span id='mensajes'>Zona de mensajes</span>
 </form>
 @endsection

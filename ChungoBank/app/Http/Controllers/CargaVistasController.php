@@ -23,4 +23,24 @@ class CargaVistasController extends Controller
         $datos['titulo'] = 'Alta Personas';
         return view('alta-personas')->with($datos);
     }
+
+    public function altaMovimientos()
+    {
+        $datos['titulo'] = 'Alta Movimientos';
+        return view('alta-movimientos')->with($datos);
+    }
+
+    public function consultaMovimientos()
+    {
+        $datos['titulo'] = 'Consulta Movimientos';
+        return view('consulta-movimientos')->with($datos);
+    }
+
+    public function detalleMovimiento()
+    {
+        $datos['titulo'] = 'Detalle Movimiento';
+        return view('detalle-movimiento')->with($datos);
+    }
+
+
 }

@@ -21,8 +21,8 @@ class CreateCuentasTable extends Migration
             $table->char('cuenta', 10);
             $table->unique(['entidad', 'oficina', 'dc', 'cuenta']);
             $table->char('programa', 3);
-            $table->tinyInteger('extracto', 4);
-            $table->tinyInteger('renuncia', 4);
+            $table->tinyInteger('extracto');
+            $table->tinyInteger('renuncia');
             $table->decimal('saldo', 5, 0);
             $table->date('fechaextracto', 60)->nullable();
             $table->timestamps();

@@ -18,4 +18,6 @@ Route::get('/', [CargaVistasController::class, 'gestion']);
 Route::get('/altaMtoPuntos', [CargaVistasController::class, 'altaMtoPuntos']);
 Route::get('/altaPersonas', [CargaVistasController::class, 'altaPersonas']);
 
-
+Route::get('/altaMovimientos', [CargaVistasController::class, 'altaMovimientos']);
+Route::get('/consultaMovimientos', [CargaVistasController::class, 'consultaMovimientos']);
+Route::get('/detalleMovimiento', [CargaVistasController::class, 'detalleMovimiento']);
