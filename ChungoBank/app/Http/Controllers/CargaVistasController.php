@@ -3,12 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use app\Models\Personas;
 
 class CargaVistasController extends Controller
 {
     public function gestion()
     {
         $datos['titulo'] = 'Gestion comercial';
+
+        if (session()->has('idPersona')) {
+            $id = session('idPersona');
+            $persona = Personas::find($id);
+            $datos['persona'] = $persona;
+        }
+
         return view('gestion')->with($datos);
     }
 
@@ -41,6 +49,4 @@ class CargaVistasController extends Controller
         $datos['titulo'] = 'Detalle Movimiento';
         return view('detalle-movimiento')->with($datos);
     }
-
-
 }
